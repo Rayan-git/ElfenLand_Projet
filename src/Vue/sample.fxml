@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vue.Controller">
+   <children>
+      <Label layoutX="41.0" layoutY="24.0" prefHeight="17.0" prefWidth="519.0" text="             ELFENLAND : MENU PRINCIPAL" textAlignment="RIGHT">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Line endX="499.0" layoutX="108.0" layoutY="79.0" startX="-138.0" />
+      <Button fx:id="new_window" layoutX="164.0" layoutY="161.0" mnemonicParsing="false" onAction="#pressButton" prefHeight="25.0" prefWidth="273.0" text="Lancer une nouvelle partie" />
+      <Button layoutX="164.0" layoutY="219.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="273.0" text="Charger une partie sauvegardée" />
+      <Line endX="499.0" layoutX="108.0" layoutY="331.0" startX="-116.5" />
+      <Button fx:id="btn_close" layoutX="451.0" layoutY="350.0" mnemonicParsing="false" onAction="#alertQuit" text="Quitter l'application" />
+   </children>
+</Pane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vue.Controller">
+   <children>
+      <Label layoutX="163.0" layoutY="30.0" text="Lancer une partie">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Line endX="556.0" layoutX="101.0" layoutY="103.0" startX="-158.5" />
+      <Line endX="602.0" layoutX="101.0" layoutY="279.0" startX="-100.0" />
+      <Label layoutX="14.0" layoutY="127.0" text="Nombre de joueurs : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="187.0" text="Style de jeu : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="189.0" layoutY="188.0" prefWidth="150.0" value="Simple">
+      <items>
+         <FXCollections fx:factory="observableArrayList">
+            <String fx:value="Simple" />
+            <String fx:value="Variante" />
+         </FXCollections>
+      </items></ChoiceBox>
+      <Spinner fx:id="spinner" layoutX="190.0" layoutY="128.0" BorderPane.alignment="CENTER">
+         <valueFactory>
+            <SpinnerValueFactory.IntegerSpinnerValueFactory max="6" min="1" />
+         </valueFactory>
+      </Spinner>
+      <Button fx:id="press_btn" layoutX="480.0" layoutY="331.0" mnemonicParsing="false" onAction="#alert" text="Lancer la partie" />
+      <Button fx:id="annul" layoutX="387.0" layoutY="331.0" mnemonicParsing="false" onAction="#annul" text="Annuler" />
+   </children>
+</Pane>
